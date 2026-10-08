@@ -43,7 +43,7 @@ class _ContadorPageState extends State<ContadorPage> {
         SizedBox(width: 30.0),
         FloatingActionButton(child: Icon(Icons.exposure_zero, color: Colors.white), onPressed: _restart, backgroundColor: Colors.blue),
         Expanded(child: SizedBox()),
-        FloatingActionButton(child: Icon(Icons.remove, color: Colors.white), onPressed: _restart, backgroundColor: Colors.blue),
+        FloatingActionButton(child: Icon(Icons.remove, color: Colors.white), onPressed: _restar, backgroundColor: Colors.blue),
         SizedBox(width: 5.0),
         FloatingActionButton(child: Icon(Icons.add, color: Colors.white), onPressed: _sumar, backgroundColor: Colors.blue),
       
