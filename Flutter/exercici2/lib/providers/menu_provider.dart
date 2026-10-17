@@ -1,16 +1,25 @@
 import 'dart:convert';
+
 import 'package:flutter/services.dart' show rootBundle;
 
 class _MenuProvider {
   List<dynamic> opcions = [];
 
-  Future<List<dynamic>> carregarDades() async {
-    final resposta = await rootBundle.loadString('data/menu_opts.json');
-    print(resposta);
+  _MenuProvider(){
+    // carregarDades();
+  }
+
+  Future<List<dynamic>> carregarDades() async{
+    final resposta = await rootBundle.loadString("data/menu_opts.json");
+
     Map dataMap = json.decode(resposta);
-    opcions = dataMap['rutes'];
+    print(dataMap);
+    var opcions = dataMap["rutes"];
     return opcions;
   }
+
 }
 
-final menuProvider = _MenuProvider();
+
+
+final menuProvider = new _MenuProvider();

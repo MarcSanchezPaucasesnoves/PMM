@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
+ 
+class AvatarScreen extends StatelessWidget {
 
-class AvatarScreen extends StatefulWidget {
-  const AvatarScreen({super.key});
-
-  @override
-  State<AvatarScreen> createState() => _AvatarScreenState();
-}
-
-class _AvatarScreenState extends State<AvatarScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Pàgina Avatar"),
+      ),
+    );
   }
 }
