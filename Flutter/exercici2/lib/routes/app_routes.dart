@@ -1,15 +1,13 @@
-import 'package:exercici2/screens/alert_screen.dart';
-import 'package:exercici2/screens/avatar_screen.dart';
-import 'package:exercici2/screens/home_screen.dart';
 import 'package:flutter/material.dart';
+import '../screens/screens.dart';
 
 
 Map<String, WidgetBuilder> getRoutes(){
   return <String, WidgetBuilder>{
   "/" : (BuildContext context) => HomeScreen(),
-  "alert" : (BuildContext context) => AlertScreen(),
+  "alert" : (BuildContext context) => AvatarScreen(),
   "avatar" : (BuildContext context) => AvatarScreen(),
-  "card" : (BuildContext context) => AvatarScreen(),
+  "card" : (BuildContext context) => CardScreen(),
   "animatedContainer" : (BuildContext context) => AvatarScreen(),
   "inputs" : (BuildContext context) => AvatarScreen(),
   "slider" : (BuildContext context) => AvatarScreen(),
