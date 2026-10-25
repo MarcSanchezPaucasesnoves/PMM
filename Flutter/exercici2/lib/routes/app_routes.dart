@@ -5,13 +5,13 @@ import '../screens/screens.dart';
 Map<String, WidgetBuilder> getRoutes(){
   return <String, WidgetBuilder>{
   "/" : (BuildContext context) => HomeScreen(),
-  "alert" : (BuildContext context) => AvatarScreen(),
+  "alert" : (BuildContext context) => AlertScreen(),
   "avatar" : (BuildContext context) => AvatarScreen(),
   "card" : (BuildContext context) => CardScreen(),
-  "animatedContainer" : (BuildContext context) => AvatarScreen(),
-  "inputs" : (BuildContext context) => AvatarScreen(),
-  "slider" : (BuildContext context) => AvatarScreen(),
-  "list" : (BuildContext context) => AvatarScreen(),
+  "animatedContainer" : (BuildContext context) => AnimatedContainerScreen(),
+  "inputs" : (BuildContext context) => InputScreen(),
+  "slider" : (BuildContext context) => SliderScreen(),
+  "list" : (BuildContext context) => LlistaScreen(),
   
   };
 }
