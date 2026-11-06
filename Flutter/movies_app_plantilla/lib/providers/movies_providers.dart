@@ -10,7 +10,7 @@ class MoviesProvider extends ChangeNotifier{
   String _language = "es-ES";
   String _page = "1";
 
-  List<Movie> onDisplayMovie = [];
+  List<Movie> onDisplayMovies = [];
 
   MoviesProvider () {
     print("Movies provider inicialitzat");
@@ -28,7 +28,8 @@ class MoviesProvider extends ChangeNotifier{
     final result = await http.get(url);
 
     final nowPlayingRespone = NowPlayingRespone.fromJson(result.body);
-
-    onDisplayMovie = nowPlayingRespone.results;
+    onDisplayMovies = nowPlayingRespone.results;
+    notifyListeners();
+    
   }
 }
