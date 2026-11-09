@@ -18,6 +18,7 @@ class MoviesProvider extends ChangeNotifier{
   MoviesProvider () {
     print("Movies provider inicialitzat");
     this.getOnDisplayMovies();
+    this.getOnPopular();
   }
 
   getOnDisplayMovies() async{
